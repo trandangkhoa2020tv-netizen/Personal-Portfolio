@@ -29,8 +29,10 @@
 .aboutMe__container {
     width: 70%;
     padding: 3rem;
-    background-color: hsla(var(--p-600-code), 0.1);
+    background-color: hsla(220, 38%, 18%, 0.72);
+    border: 1px solid hsla(198, 81%, 63%, 0.22);
     border-radius: 3rem;
+    box-shadow: 0 24px 80px hsla(225, 60%, 2%, 0.45);
 }
 
 .aboutMe__content_container {
@@ -39,16 +41,17 @@
     gap: 28px;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: hsla(225, 32%, 8%, 0.9);
+    border: 1px solid hsla(198, 81%, 63%, 0.18);
     border-radius: 3rem;
     padding: 3rem 0;
 
     & h1 {
-        color: var(--p-600);
+        color: hsl(196, 100%, 82%);
     }
 
     & p {
-        color: var(--n-600);
+        color: hsl(218, 27%, 78%);
         padding: 0 1rem;
     }
 }
@@ -87,12 +90,12 @@
 }
 
 .outlineButton {
-    border: 1px solid var(--p-600);
-    color: var(--p-600);
-    background-color: transparent;
+    border: 1px solid hsla(198, 81%, 63%, 0.6);
+    color: hsl(196, 100%, 82%);
+    background-color: hsla(220, 35%, 12%, 0.42);
 
     &:hover {
-        box-shadow: 0 4px 8px hsla(var(--p-900-code), 0.1),
+        box-shadow: 0 8px 24px hsla(198, 81%, 63%, 0.18),
             0 2px 4px hsla(var(--p-900-code), 0.3);
     }
 }

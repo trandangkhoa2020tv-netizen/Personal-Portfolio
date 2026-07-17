@@ -21,14 +21,38 @@
 }
 
 body {
-	/* background pattern */
-	background-color: var(--foreground-color);
-	background-size: 7px 7px;
-	background-image: repeating-linear-gradient(45deg,
-			hsla(var(--p-500-code), 0.1) 0,
-			hsla(var(--p-700-code), 0.1) 0.7000000000000001px,
-			var(--foreground-color) 0,
-			var(--foreground-color) 50%);
+	min-height: 100vh;
+	color: hsl(215, 45%, 92%);
+	background-color: hsl(224, 36%, 5%);
+	background-image:
+		radial-gradient(circle, hsla(198, 81%, 63%, 0.16) 1px, transparent 1.6px),
+		linear-gradient(180deg, hsl(224, 36%, 5%) 0%, hsl(229, 34%, 8%) 100%);
+	background-size: 28px 28px, 100% 100%;
+	background-attachment: fixed;
+	isolation: isolate;
+	position: relative;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: 0;
+	background-image:
+		linear-gradient(180deg,
+			hsla(198, 81%, 63%, 0.12) 0%,
+			transparent 34%,
+			hsla(var(--p-700-code), 0.08) 100%),
+		linear-gradient(120deg,
+			hsla(var(--p-600-code), 0.12) 0%,
+			transparent 42%);
+	opacity: 0.85;
+}
+
+body > * {
+	position: relative;
+	z-index: 1;
 }
 
 a {
@@ -57,12 +81,12 @@ section {
 	font-size: var(--h1-font-size);
 	line-height: var(--h1-line-height);
 	font-weight: bold;
-	color: var(--p-950);
+	color: hsl(210, 100%, 98%);
 	text-transform: capitalize;
 }
 
 .section__description {
 	text-align: center;
 	max-width: 65ch;
-	color: var(--n-500);
+	color: hsl(218, 27%, 76%);
 }

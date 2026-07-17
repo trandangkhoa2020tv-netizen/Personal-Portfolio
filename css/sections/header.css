@@ -10,12 +10,12 @@ header {
     gap: 40px;
 
     & p {
-        color: var(--n-600);
+        color: hsl(218, 27%, 76%);
     }
 
     & span {
         font-weight: 600;
-        color: var(--p-950);
+        color: hsl(196, 100%, 79%);
     }
 }
 
@@ -23,6 +23,7 @@ header {
     font-size: var(--h2-font-size);
     line-height: var(--h2-line-height);
     font-weight: 600;
+    color: hsl(210, 100%, 98%);
 }
 
 .header__column--left {
@@ -46,9 +47,10 @@ header {
     & .badge {
         font-size: var(--caption-font-size);
         line-height: var(--caption-line-height);
-        color: var(--p-950);
+        color: hsl(196, 100%, 82%);
         padding: 4px 12px;
-        background-color: var(--p-50);
+        background-color: hsla(220, 35%, 16%, 0.82);
+        border: 1px solid hsla(198, 81%, 63%, 0.28);
         border-radius: 4px;
         /* line-clamp */
         display: -webkit-box;

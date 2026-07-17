@@ -22,22 +22,23 @@
         line-height: var(--h2-line-height);
         font-weight: 600;
         text-transform: capitalize;
+        color: hsl(210, 100%, 98%);
     }
 
     & p {
         margin-top: 12px;
-        color: var(--n--500);
+        color: hsl(218, 27%, 76%);
         max-width: 60ch;
     }
 }
 
 .skills__grid_item {
     overflow: hidden;
-    border: 2px solid var(--p-100);
+    border: 1px solid hsla(198, 81%, 63%, 0.22);
     border-radius: 24px;
-    background-color: var(--p-20);
+    background-color: hsla(225, 32%, 8%, 0.82);
     padding: 2rem 2rem;
-    box-shadow: 0px 2px 4px hsla(233, 45%, 20%, 0.1);
+    box-shadow: 0 18px 55px hsla(225, 60%, 2%, 0.34);
 
     &:nth-child(1) {
         border: none;
@@ -86,6 +87,8 @@
 
             & img {
                 height: 2em;
+                object-fit: contain;
+                flex-shrink: 0;
             }
         }
 
@@ -127,9 +130,9 @@
         & .softSkills_badge {
             height: 36px;
             width: 244px;
-            border: 1px solid var(--p-100);
+            border: 1px solid hsla(198, 81%, 63%, 0.24);
             border-radius: 24px;
-            background-color: white;
+            background-color: hsla(220, 35%, 14%, 0.92);
             display: flex;
             justify-content: center;
             align-items: center;
